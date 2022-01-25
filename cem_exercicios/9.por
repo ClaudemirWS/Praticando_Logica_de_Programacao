@@ -1,9 +1,12 @@
-//CLAUDEMIR SOUZA - PRIMEIRO PROGRAMA EM PORTUGOL
+//CLAUDEMIR SOUZA - DINHEIRO PARA DOLAR
 programa
 {
 	funcao inicio()
 	{
-	escreva("Olá, mundo")
+	real din
+	escreva("Quanto dinheiro você tem na carteira em R$: ")
+	leia(din)
+	escreva("Em dólares você tem: ", din/5.50)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -11,7 +14,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 49; 
+ * @POSICAO-CURSOR = 180; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

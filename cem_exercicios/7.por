@@ -1,9 +1,12 @@
-//CLAUDEMIR SOUZA - PRIMEIRO PROGRAMA EM PORTUGOL
+//CLAUDEMIR SOUZA - DOBRO E TERÇA PARTE
 programa
 {
 	funcao inicio()
 	{
-	escreva("Olá, mundo")
+	real num
+	escreva("Digite um número: ")
+	leia(num)
+	escreva("O número ", num," tem como dobro ", num*2, " e terça parte ", num/3, ".") 
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -11,7 +14,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 49; 
+ * @POSICAO-CURSOR = 200; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
