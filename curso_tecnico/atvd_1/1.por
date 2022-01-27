@@ -9,7 +9,7 @@ programa
 		escreva("\n========== CUSTO DE EVENTO COM GARÇONS ==========\n")
 		escreva("Digite quantos garçons serão necessários: ")
 		leia(gar)
-		escreva("Digite quantas hr terá o evento: ")
+		escreva("Digite quantas horas terá o evento: ")
 		leia(hr_evento)
 		se (gar >= 1 e hr_evento >= 1) {
 			valor_gar = (gar - 1) * 10.50 //QUANTIDADE DE GARÇONS VEZES VALOR POR HORA
@@ -27,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 389; 
+ * @POSICAO-CURSOR = 352; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
