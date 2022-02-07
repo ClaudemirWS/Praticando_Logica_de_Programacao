@@ -1,14 +1,14 @@
-//CLAUDEMIR SOUZA - Aumento de 15% do salário
+//CLAUDEMIR SOUZA - Redução do tempo de vida de um fumante
 programa
 {
 	funcao inicio()
 	{
-	real sal, novosal
-	escreva("========== AUMENTO DE 15% NO SALÁRIO ==========")
-	escreva("\nDigite o seu salário atual: R$ ")
-	leia(sal)
-	novosal = sal + (sal*15/100)
-	escreva("Seu salário de R$ ", sal," subiu para R$ ", novosal)
+	real cig, anos
+	escreva("========== REDUÇÃO DO TEMPO DE VIDA DE UM FUMANTE ==========")
+	escreva("\nQuantos cigarros você fumou por dia: ")
+	leia(cig)
+	escreva("Por quantos anos: ")
+	leia(anos)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -16,7 +16,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 45; 
+ * @POSICAO-CURSOR = 105; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

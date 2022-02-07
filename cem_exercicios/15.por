@@ -1,14 +1,15 @@
-//CLAUDEMIR SOUZA - Aumento de 15% do salário
+//CLAUDEMIR SOUZA - Dias trabalhados por mês. Regra de negócio: são 8 horas por dia e R$ 25 por hora
 programa
 {
 	funcao inicio()
 	{
-	real sal, novosal
-	escreva("========== AUMENTO DE 15% NO SALÁRIO ==========")
-	escreva("\nDigite o seu salário atual: R$ ")
-	leia(sal)
-	novosal = sal + (sal*15/100)
-	escreva("Seu salário de R$ ", sal," subiu para R$ ", novosal)
+	inteiro dias, horas
+	real salario
+	escreva("========== SALARIO DE UM FUNCIONÁRIO ==========")
+	escreva("\nQuantos dias você trabalhou este mês: ")
+	leia(dias)
+	salario = dias*8*25
+	escreva("Seu salário equivale a R$ ", salario)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -16,7 +17,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 45; 
+ * @POSICAO-CURSOR = 100; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
