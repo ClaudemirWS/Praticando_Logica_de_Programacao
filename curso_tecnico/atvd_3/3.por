@@ -3,17 +3,16 @@
 
 programa
 {
-	cadeia opc, nome_hspd, hospedes[16], menu = "S"
+	cadeia opc, nome_pesq, nome_hspd, hospedes[16], menu = "S"
 	inteiro i = 0, n = 0, cad = 15
 	
 	funcao inicio()
 	{
-		escreva("========== SERVIÇO DE HOSPEDAGEM ==========")
 		faca 
 		{
 		//MENU PRINCIPAL
 		escreva("\nRestam ", cad, " vagas.")
-		escreva("\nOPÇÕES:", "\n1 - CADASTRAR", "\n2 - PESQUISAR", "\n3 - SAIR", "\nDigite um número: ")
+		escreva("\nOPÇÕES:", "\n1 - CADASTRAR", "\n2 - PESQUISAR", "\n3 - LISTA DE HOSPEDES", "\n4 - SAIR", "\nDigite um número: ")
 		leia(opc)
 		//CADASTRA HOSPEDES
 		se (opc == "1")
@@ -32,8 +31,26 @@ programa
 				escreva("\nNúmero máximo de hospedes alcançado.\n")
 			}		
 		}
-		//LISTA OS HOSPEDES COM INDICE
+		//PESQUISA OS HOSPEDES
 		senao se (opc == "2")
+		{
+			escreva("\nPesquise o nome do hospede: ")
+			leia(nome_pesq)
+			para (n = 1; n < i+1; n++)
+			{	
+				se (hospedes[n] == nome_pesq)
+				{
+					escreva("\n", n ," - ", hospedes[n],"\n")
+				}
+				senao se (n == i)
+				{
+					escreva("\nHospede não registrado.\n")
+				}
+				
+			}
+		}
+		//LISTA OS HOSPEDES COM INDICE
+		senao se (opc == "3")
 		{	
 			para (n = 1; n < i+1; n++)
 			{
@@ -41,8 +58,8 @@ programa
 			}
 
 		}
-		//SE OPC FOR A 3, FECHA O PROGRAMA
-		senao se (opc == "3")
+		//SE OPC FOR A 4, FECHA O PROGRAMA
+		senao se (opc == "4")
 		{
 			menu = ""
 		}
@@ -64,7 +81,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 604; 
+ * @POSICAO-CURSOR = 1128; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
