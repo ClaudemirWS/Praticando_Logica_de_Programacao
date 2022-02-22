@@ -1,60 +1,61 @@
-//REGRA DO NEGÓCIO: USUARIO PODERÁ CADASTRAR E PESQUISAR HOSPEDES. MENU COM TRÊS OPÇÕES (CAD, PESQ, SAIR).
-//MÁXIMO DE 15 CADASTROS. PESQUISA POR NOME E MOSTRE INDICE DO HOSPEDE. 
+//LIMPEZA TODOS OS DIAS DA SEMANA. TRÊS TURNOS: MANHÃ, TARDE E NOITE. RECEBE DIA DA SEMANA E TURNO
+//DEPOIS NOME DO RESPONSÁVEL, FINALIZA AO RECEBER 0 COMO DIA DA SEMANA.
 
 programa
 {
-	cadeia opc, nome_hspd, hospedes[16], menu = "S"
-	inteiro i = 0, n = 0, cad = 15
 	
 	funcao inicio()
 	{
-		escreva("========== SERVIÇO DE HOSPEDAGEM ==========")
-		faca 
-		{
-		//MENU PRINCIPAL
-		escreva("\nRestam ", cad, " vagas.")
-		escreva("\nOPÇÕES:", "\n1 - CADASTRAR", "\n2 - PESQUISAR", "\n3 - SAIR", "\nDigite um número: ")
-		leia(opc)
-		//CADASTRA HOSPEDES
-		se (opc == "1")
-		{
-			//MÁXIMO DE 15 CADASTROS
-			se (i < 15)
-			{
-				i += 1
-				cad -= 1
-				escreva("\nDigite o nome do hospede: ")
-				leia(nome_hspd)
-				hospedes[i] = nome_hspd			
-			}
-			senao
-			{
-				escreva("\nNúmero máximo de hospedes alcançado.\n")
-			}		
-		}
-		//LISTA OS HOSPEDES COM INDICE
-		senao se (opc == "2")
-		{	
-			para (n = 1; n < i+1; n++)
-			{
-				escreva("\n", n ," - ", hospedes[n],"\n")
-			}
+		cadeia limpeza[8][4], turno, nome
+		inteiro dia, i
+		//HORARIOS
+		limpeza[0][1] = "Manhã"
+		limpeza[0][2] = "Tarde"
+		limpeza[0][3] = "Noite"
+		//DIAS
+		limpeza[1][0] = "Domingo"
+		limpeza[2][0] = "Segunda"
+		limpeza[3][0] = "Terça"
+		limpeza[4][0] = "Quarta"
+		limpeza[5][0] = "Quinta"
+		limpeza[6][0] = "Sexta"
+		limpeza[7][0] = "Sábado"
 
-		}
-		//SE OPC FOR A 3, FECHA O PROGRAMA
-		senao se (opc == "3")
+		faca
 		{
-			menu = ""
-		}
-		//SE DIGITADO VALOR INVALIDO, REINICIA FUNÇÃO
-		senao 
-		{
-			escreva("Opção incorreta.\n")
-			inicio()
-		}
-		//ENQUANTO A CONDIÇÃO FOR VERDADEIRA, RODA O PROGRAMA
-		} enquanto (menu == "S" ou menu == "s")
+			escreva("\n0 - SAIR / 1 - DOMINGO / 2 - SEGUNDA / 3 - TERÇA","\n4 - QUARTA / 5 - QUINTA / 6 - SEXTA / 7 - SÁBADO")
+			escreva("\nDigite o dia de trabalho do funcionário: ")
+			leia(dia)
+			se (dia >= 1 e dia <= 7)
+			{
+				escreva("\n M - MANHÃ / T - TARDE / N - NOITE")
+				escreva("\nDigite o turno de trabalho do funcionário: ")
+				leia(turno)
+				escreva("\nDigite o nome do funcionário: ")
+				leia(nome)
+				se (turno == "M" ou turno == "m")
+				{
+					limpeza[dia][1] = nome
+				}
+				se (turno == "T" ou turno == "t")
+				{
+					limpeza[dia][2] = nome
+				}
+				se (turno == "N" ou turno == "n")
+				{
+					limpeza[dia][3] = nome
+				}
+			}
+		} enquanto (dia != 0)
 
+		escreva("\n")
+		para (i = 0; i < 8; i ++)
+		{
+			escreva("\n",limpeza[i][0])
+			escreva("\t",limpeza[i][1])
+			escreva("\t",limpeza[i][2])
+			escreva("\t",limpeza[i][3])
+		}
 
 	}
 
@@ -64,7 +65,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 604; 
+ * @POSICAO-CURSOR = 925; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

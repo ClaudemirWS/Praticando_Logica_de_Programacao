@@ -37,10 +37,12 @@ programa
 			escreva("\nPesquise o nome do hospede: ")
 			leia(nome_pesq)
 			para (n = 1; n < i+1; n++)
-			{	
+			{
+					
 				se (hospedes[n] == nome_pesq)
 				{
 					escreva("\n", n ," - ", hospedes[n],"\n")
+					
 				}
 				senao se (n == i)
 				{
@@ -81,7 +83,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1128; 
+ * @POSICAO-CURSOR = 1095; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
