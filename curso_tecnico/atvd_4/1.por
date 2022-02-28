@@ -4,6 +4,24 @@
 programa
 {
 
+	//RODA O PROGRAMA E INICIA FUNÇÕES
+	funcao inicio()
+	{
+		cadeia roda = "S"
+
+		faca 
+		{
+
+		simula_desconto()
+
+		escreva("\nDeseja continuar? (S/N): ")
+		leia(roda)
+
+			
+		} enquanto (roda == "S" ou roda == "s")
+	}
+
+	//RECEBE DADOS E CALCULA DESCONTO
 	funcao simula_desconto()
 	{
 		cadeia nome, empresa 
@@ -25,29 +43,13 @@ programa
 		{
 			valor_final = aparlh * valor
 			valor_final -= valor_final * desct / 100
-			escreva("\nO serviço da ", nome, " custará R$ ", valor_final, ".")
 		}
 		senao 
 		{
 			valor_final = valor * aparlh
-			escreva("\nO serviço da ", nome, " custará R$ ", valor_final, ".")
 		}
-	}
-	
-	funcao inicio()
-	{
-		cadeia roda = "S"
 
-		faca 
-		{
-
-		simula_desconto()
-
-		escreva("\nDeseja continuar? (S/N): ")
-		leia(roda)
-
-			
-		} enquanto (roda == "S" ou roda == "s")
+		escreva("\nO serviço da ", nome, " custará R$ ", valor_final, ".")
 	}
 
 }
@@ -56,7 +58,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 204; 
+ * @POSICAO-CURSOR = 1112; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
