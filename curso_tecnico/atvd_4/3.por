@@ -73,7 +73,7 @@ programa
 
 	}
 
-	//LISTA A DEPRESSIAÇÃO POR ANO
+	//LISTA A DEPRECIAÇÃO POR ANO
 	funcao lista_depre_anual(inteiro ano_atual, inteiro ano_compra, inteiro vida_util, real valor, real depre_anual)
 	{
 		se (ano_atual - ano_compra < vida_util)
@@ -109,7 +109,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 250; 
+ * @POSICAO-CURSOR = 2728; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
