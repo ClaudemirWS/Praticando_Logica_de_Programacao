@@ -1,46 +1,38 @@
-//CLAUDEMIR SOUZA - SALÁRIO E SEXO DE VÁRIOS FUNCIONÁRIOSs
+//CLAUDEMIR SOUZA - SOMATORIO ENTRE VÁRIOS NÚMEROS
 programa
 {
-	
+
 	funcao inicio()
 	{
-		real salario, salario_Hom = 0.00, salario_Mul = 0.00
-		cadeia sexo
-		inteiro roda = 1 
+		inteiro soma = 0, num, cont = 1
 
-		escreva("===== DIGITE O SALÁRIO E SEXO DE FUNCIONÁRIOS =====")
-		enquanto (roda == 1)
+		escreva("===== VAMOS SOMAR VÁRIOS NÚMEROS EM SEGUIDA =====")
+		enquanto (cont == 1)
 		{
-			escreva("\nDigite o salário do(a) funcionário(a): R$ ")
-			leia(salario)
-			escreva("Digite o sexo do(a) funcionário(a) (M/F): ")
-			leia(sexo)
+			escreva("\nDigite um número para somar ou digite 0 para sair: ")
+			leia(num)
 
-			se (sexo == "m" ou sexo == "M")
+			se (num != 0)
 			{
-				salario_Hom += salario
+				soma += num
 			}
-			senao se (sexo == "f" ou sexo == "F")
+			senao
 			{
-				salario_Mul += salario
+				cont = 0
 			}
 
-			escreva("\nDeseja continuar? (0 - NÃO / 1 - SIM): ")
-			leia(roda)
 		}
-
-		escreva("\nA soma dos salários dos homens é R$ ",salario_Hom)
-		escreva("\nA soma dos salários das mulheres é R$ ",salario_Mul)
+		escreva("\nA soma entre todos é: ",soma)
 
 	}	
-	
+
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 641; 
+ * @POSICAO-CURSOR = 420; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
