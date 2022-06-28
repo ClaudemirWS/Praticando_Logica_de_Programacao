@@ -1,4 +1,4 @@
-//CLAUDEMIR SOUZA - ROTINAS 4
+//CLAUDEMIR SOUZA - PRODCEDIMENTOS 1
 programa
 {	
 
@@ -26,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 122; 
+ * @POSICAO-CURSOR = 36; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
